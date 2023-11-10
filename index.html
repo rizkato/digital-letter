@@ -1,58 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css">
-        <title>Love Confession</title>
-        
-        <!-- Load love.js first -->
-        <!-- <script src="love.js"></script> -->
-        <!-- Then load script.js -->
-        <!-- <script src="script.js"></script> -->
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Love Confession</title>
+    <script src="love.js"></script>
+    <script src="script.js"></script>
+</head>
 <body>
-    <canvas id="cavs" style="position:fixed; z-index:-1;"></canvas>
+    <canvas id="cavs" style="position: fixed; z-index: -1;"></canvas>
     <div class="container">
         <div class="letter" id="page1">
             <h2>Dear Rizka Putri Adriani,</h2>
-            <p>I hope this message finds you well. I've been meaning to tell you something important, and I thought it would be best to put my feelings into words.</p>
+            <p>I hope this message finds you in the best of spirits. There's something I've been wanting to share, something that has been growing within me, and I believe it's time to express these feelings in words.</p>
             <button onclick="nextPage()">Next</button>
         </div>
 
         <div class="letter" id="page2" style="display: none;">
-            <p>From the moment we met, I've found myself thinking about you more and more. </p> 
-            <P>Smile brightens my day, and your laughter is like music to my ears. I cherish the time we spend together, and I've come to realize that my feelings for you go beyond friendship.</p>
+            <p>From the very first moment our paths crossed, a unique spark ignited within me. Your presence has become a guiding light, brightening even the dullest of days. It's more than just a passing thought; it's a realization that you occupy my mind more than I anticipated.</p> 
+            <p>Your smile is a beacon of joy, and your laughter, a melody that resonates within my soul. As we move forward, I want you to know that my admiration for you has deepened, surpassing the bounds of friendship.</p>
             <button onclick="prevPage()">Previous</button>
             <button onclick="nextPage()">Next</button>
         </div>
 
         <div class="letter" id="page3" style="display: none;">
-            <p>So, here it goes - I have a crush on you, and I can't keep it to myself any longer. I would be honored if you would consider being my girlfriend. I value our connection, and I believe there's something special between us.</p>
-            <p>Take your time to think about it, and regardless of your decision, I'm grateful for the friendship we share. I hope we can continue to make wonderful memories together.</p>
+            <p>So, here I am, penning down these thoughts that have been playing on a loop in my heart. It's more than a mere crush; it's an acknowledgment of the profound connection I feel with you. Would you consider being more than a friend? Could you envision us as partners, exploring the intricacies of a deeper bond?</p>
+            <p>Your presence brings a unique color to my life's canvas, and I believe there's something extraordinary between us. Take all the time you need to ponder over this, and regardless of your decision, our friendship is a treasure I deeply cherish.</p>
             <button onclick="prevPage()">Previous</button>
             <button onclick="nextPage()">Next</button>
         </div>
 
         <div class="letter" id="page4" style="display: none;">
-            <p>As I reflect on the moments we've shared, I can't help but feel a deep connection with you. Your kindness, sense of humor, and the way you understand me make me believe that we could have something truly special.</p>
-            <p>I've been hesitant to express my feelings, fearing it might affect our friendship. But honesty is important, and I couldn't keep this to myself any longer. Being with you feels right, and I believe we could create beautiful memories together as more than friends.</p>
-            <p>So, would you be my girlfriend? I understand if you need time to think, and whatever your decision, I value you immensely. Looking forward to hearing from you.</p>
+            <p>As I reflect on the beautiful moments we've shared, I realize that my feelings for you are not mere fleeting emotions; they are a sincere and deep appreciation for who you are. Your kindness, your sense of humor, and the way you understand me make me believe that what we share could be truly extraordinary.</p>
+            <p>Despite my reservations about risking our friendship, the honesty within me couldn't be contained any longer. It feels right to express that being with you feels like more than just friendship. Could we possibly create beautiful memories together as partners?</p>
+            <p>So, here's the question: Would you be my partner on this journey? I comprehend the need for contemplation, and no matter your decision, please know that your value in my life is immeasurable.</p>
             <button onclick="prevPage()">Previous</button>
             <button onclick="nextPage()">Next</button>
         </div>
 
         <div class="letter" id="page5" style="display: none;">
-            <h2>Dear Rizka,</h2>
-            <p>As I write this final part of my confession, I want you to know that you mean a lot to me. Your presence adds joy to my life, and the thought of a romantic connection with you fills my heart with excitement.</p>
-            <p>I understand that this is a significant step, and I respect whatever decision you make. Whether we remain close friends or take a leap into something more, I am grateful for the time we've spent together.</p>
-            <p>Thank you for being a wonderful person, and I look forward to what the future holds for us, whatever form it may take.</p>
+            <h2>Dear Rizka Putri Adriani,</h2>
+            <p>As I pen down this final part of my confession, I want you to understand the depth of my feelings. Your presence is not just a pleasant addition to my life; it is a source of immense joy. The prospect of a romantic connection with you fills my heart with excitement and anticipation.</p>
+            <p>I acknowledge that this is a significant step, and your decision is crucial. Whether we choose to remain close friends or take a leap into something more, I am genuinely grateful for the time we've spent together.</p>
+            <p>Thank you for being the wonderful person you are. I eagerly await what the future holds for us, irrespective of the form it may take.</p>
+            <button onclick="prevPage()">Previous</button>
+        </div>
+
+        <div class="letter" id="page6" style="display: none;">
+            <p>Dear [Recipient's Name],</p>
+            <p>As the journey of expressing my emotions continues, I find myself marveling at the tapestry of our connection. Each shared moment is a thread, weaving a unique story that holds significance in the grand narrative of our lives.</p>
+            <p>Whether our paths lead us towards a romantic connection or strengthen the bond of friendship, I want you to know that every chapter we write together is a chapter well-lived. Each word penned is a reflection of the authenticity of my emotions.</p>
+            <button onclick="prevPage()">Previous</button>
+            <button onclick="nextPage()">Next</button>
+        </div>
+
+        <div class="letter" id="page7" style="display: none;">
+            <p>[Recipient's Name], these words aren't just an expression of my feelings; they are a commitment to understanding, to respect, and to the beauty of shared experiences. Love, in all its forms, is a journey we embark on together.</p>
+            <p>Every "I love you" whispered, every shared laughter, and every silent understanding builds the foundation of something beautiful. I hope we can explore the depths of our connection and create a story that resonates with the song of our hearts.</p>
+            <button onclick="prevPage()">Previous</button>
+            <button onclick="nextPage()">Next</button>
+        </div>
+
+        <div class="letter" id="page8" style="display: none;">
+            <p>With each passing page, the tapestry of our connection unfolds. Every chapter is a testament to the growth of emotions, the understanding between two souls, and the beauty of vulnerability.</p>
+            <p>As I pen down these words, I want you to know that my feelings for you are genuine and heartfelt. Whether our journey takes a romantic turn or we continue as dear friends, the value of our connection remains immeasurable.</p>
+            <button onclick="prevPage()">Previous</button>
+            <button onclick="nextPage()">Next</button>
+        </div>
+
+        <div class="letter" id="page9" style="display: none;">
+            <h2>My Dearest [Recipient's Name],</h2>
+            <p>As we approach the end of this letter, I want to express my gratitude for your presence in my life. You are a treasure, and the moments we've shared are gems in the tapestry of my memories.</p>
+            <p>Whatever your response may be, I want you to take your time. Emotions are complex, and decisions take thoughtful consideration. I respect whatever path you choose, and I'm grateful for the bond we share.</p>
+            <button onclick="prevPage()">Previous</button>
+            <button onclick="nextPage()">Next</button>
+        </div>
+
+        <div class="letter" id="page10" style="display: none;">
+            <h2>My Beloved [Recipient's Name],</h2>
+            <p>As I conclude this letter, my heart is filled with hope and gratitude. Our story is a tapestry of shared moments, laughter, and the beauty of emotions laid bare.</p>
+            <p>Thank you for being the canvas on which I paint my feelings, the melody that accompanies my journey, and the soul with whom I hope to share countless more chapters. Whatever the future holds, I am grateful for the pages we've written and the ones yet to come.</p>
             <button onclick="prevPage()">Previous</button>
         </div>
         <div class="page-number" id="pageNumber">1</div>
     </div>
-
-    <script src="script.js"></script>
-    <script src="love.js"></script>
 </body>
 </html>
