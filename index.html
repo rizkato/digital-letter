@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>Love Confession</title>
+        
+        <!-- Load love.js first -->
+        <!-- <script src="love.js"></script> -->
+        <!-- Then load script.js -->
+        <!-- <script src="script.js"></script> -->
+    </head>
+<body>
+    <canvas id="cavs" style="position:fixed; z-index:-1;"></canvas>
+    <div class="container">
+        <div class="letter" id="page1">
+            <h2>Dear Rizka Putri Adriani,</h2>
+            <p>I hope this message finds you well. I've been meaning to tell you something important, and I thought it would be best to put my feelings into words.</p>
+            <button onclick="nextPage()">Next</button>
+        </div>
+
+        <div class="letter" id="page2" style="display: none;">
+            <p>From the moment we met, I've found myself thinking about you more and more. </p> 
+            <P>Smile brightens my day, and your laughter is like music to my ears. I cherish the time we spend together, and I've come to realize that my feelings for you go beyond friendship.</p>
+            <button onclick="prevPage()">Previous</button>
+            <button onclick="nextPage()">Next</button>
+        </div>
+
+        <div class="letter" id="page3" style="display: none;">
+            <p>So, here it goes - I have a crush on you, and I can't keep it to myself any longer. I would be honored if you would consider being my girlfriend. I value our connection, and I believe there's something special between us.</p>
+            <p>Take your time to think about it, and regardless of your decision, I'm grateful for the friendship we share. I hope we can continue to make wonderful memories together.</p>
+            <button onclick="prevPage()">Previous</button>
+            <button onclick="nextPage()">Next</button>
+        </div>
+
+        <div class="letter" id="page4" style="display: none;">
+            <p>As I reflect on the moments we've shared, I can't help but feel a deep connection with you. Your kindness, sense of humor, and the way you understand me make me believe that we could have something truly special.</p>
+            <p>I've been hesitant to express my feelings, fearing it might affect our friendship. But honesty is important, and I couldn't keep this to myself any longer. Being with you feels right, and I believe we could create beautiful memories together as more than friends.</p>
+            <p>So, would you be my girlfriend? I understand if you need time to think, and whatever your decision, I value you immensely. Looking forward to hearing from you.</p>
+            <button onclick="prevPage()">Previous</button>
+            <button onclick="nextPage()">Next</button>
+        </div>
+
+        <div class="letter" id="page5" style="display: none;">
+            <h2>Dear Rizka,</h2>
+            <p>As I write this final part of my confession, I want you to know that you mean a lot to me. Your presence adds joy to my life, and the thought of a romantic connection with you fills my heart with excitement.</p>
+            <p>I understand that this is a significant step, and I respect whatever decision you make. Whether we remain close friends or take a leap into something more, I am grateful for the time we've spent together.</p>
+            <p>Thank you for being a wonderful person, and I look forward to what the future holds for us, whatever form it may take.</p>
+            <button onclick="prevPage()">Previous</button>
+        </div>
+        <div class="page-number" id="pageNumber">1</div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="love.js"></script>
+</body>
+</html>
