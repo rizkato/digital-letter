@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
-    background-image: url('/development/kato/rizka.jpg');
+    background-image: url('rizka.jpg');
     background-size: cover;
     background-position: center;
     display: flex; /* Add this line to create a flex container */
