@@ -18,12 +18,12 @@ function startLoveAnimation() {
 }
 
 function nextPage() {
-    if (currentPage < 10) {
+    if (currentPage < 11) {
         document.getElementById(`page${currentPage}`).style.display = 'none';
         currentPage++;
         document.getElementById(`page${currentPage}`).style.display = 'block';
         updatePageNumber();
-    } else if (currentPage === 10 && !loveAnimationStarted) {
+    } else if (currentPage === 11 && !loveAnimationStarted) {
         loveAnimationStarted = true;
         startLoveAnimation();
     }
