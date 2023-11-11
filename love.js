@@ -79,7 +79,9 @@ class Love
 			}
 		}
 		
-		window.onload = function()
-		{
-			new Board(Love).run();
-		}
+		window.onload = function() {
+			setTimeout(function() {
+				new Board(Love).run();
+			}, 30000); // 30 seconds delay (30,000 milliseconds)
+		};
+		
